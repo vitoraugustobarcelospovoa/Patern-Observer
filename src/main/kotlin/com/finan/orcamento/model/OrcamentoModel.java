@@ -73,5 +73,13 @@ public class OrcamentoModel implements Serializable {
         this.valorICMS = this.icmsEstados.getStrategy().calcular(this.valorOrcamento);
     }
 
+    @NotNull
+    public BigDecimal getValorOrcamento() {
+        return valorOrcamento;
+    }
+
+    public void setValorOrcamento(@NotNull BigDecimal valorOrcamento) {
+        this.valorOrcamento = valorOrcamento;
+    }
 }
 

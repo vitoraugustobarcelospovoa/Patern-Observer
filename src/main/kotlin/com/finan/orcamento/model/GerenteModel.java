@@ -26,9 +26,12 @@ public class GerenteModel implements Serializable {
     @Column(name = "Estoque")
     private BigDecimal estoque;
 
-    public GerenteModel(Long id, String nome, double estoque) {
+    public GerenteModel(Long id, String nome, BigDecimal estoque) {
         this.id = id;
         this.nomeEstoque = nome;
         this.estoque = estoque;
+    }
+
+    public GerenteModel(long id, String joão, double v) {
     }
 }

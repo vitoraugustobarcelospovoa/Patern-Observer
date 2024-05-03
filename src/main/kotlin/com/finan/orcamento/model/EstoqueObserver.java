@@ -5,7 +5,7 @@ public class EstoqueObserver implements Observer {
 
     @Override
     public void update(EstoqueModel estoque) {
-        if (estoque.getValor() > LIMITE) {
+        if (estoque.getValorOrcamento() > LIMITE) {
             System.out.println("Alerta: O valor do estoque ultrapassou 1000 reais!");
         }
     }
